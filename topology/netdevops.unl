@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="netdevops" id="b8fd11cc-eddb-4b47-a8d6-d3744121b0b6" version="1" scripttimeout="300" lock="0">
+  <topology>
+    <nodes>
+      <node id="1" name="xrv1" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="527c4a83-e84a-4ee3-aa40-ba15f7d8783c" delay="0" icon="XR.png" config="0" left="672" top="384">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="35"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="1"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="2"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="3"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="4"/>
+        <interface id="5" name="Gi0/0/0/4" type="ethernet" network_id="18"/>
+        <interface id="6" name="Gi0/0/0/5" type="ethernet" network_id="19"/>
+        <interface id="7" name="Gi0/0/0/6" type="ethernet" network_id="40"/>
+      </node>
+      <node id="2" name="xrv2" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="53aac3cd-4013-477f-9ac5-4d3560248945" delay="0" icon="XR.png" config="0" left="675" top="525">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="34"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="1"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="5"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="6"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="7"/>
+        <interface id="5" name="Gi0/0/0/4" type="ethernet" network_id="20"/>
+        <interface id="6" name="Gi0/0/0/5" type="ethernet" network_id="21"/>
+      </node>
+      <node id="3" name="xrv3" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="c49c2942-c3e8-4b2c-b522-d83adde0466a" delay="0" icon="XR.png" config="0" left="429" top="324">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="35"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="2"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="5"/>
+        <interface id="7" name="Gi0/0/0/6" type="ethernet" network_id="24"/>
+        <interface id="8" name="Gi0/0/0/7" type="ethernet" network_id="31"/>
+      </node>
+      <node id="4" name="xrv4" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="360e898e-e1df-4f48-b571-445d94f61e29" delay="0" icon="XR.png" config="0" left="429" top="468">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="37"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="3"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="6"/>
+        <interface id="7" name="Gi0/0/0/6" type="ethernet" network_id="25"/>
+      </node>
+      <node id="5" name="xrv5" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="c327940a-27b2-4e60-8e3e-923ce321f9b5" delay="0" icon="XR.png" config="0" left="426" top="594">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="34"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="4"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="7"/>
+        <interface id="7" name="Gi0/0/0/6" type="ethernet" network_id="26"/>
+        <interface id="8" name="Gi0/0/0/7" type="ethernet" network_id="32"/>
+      </node>
+      <node id="6" name="xrv6" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="ee578aca-83b1-4a3d-a3e1-860fb5ec148a" delay="0" icon="XR.png" config="0" left="822" top="384">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="33"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="12"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="13"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="18"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="20"/>
+        <interface id="5" name="Gi0/0/0/4" type="ethernet" network_id="22"/>
+      </node>
+      <node id="7" name="xrv7" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="d5dbaa69-a9e0-480a-905d-c6de757e7bff" delay="0" icon="XR.png" config="0" left="831" top="522">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="34"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="12"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="14"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="19"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="21"/>
+      </node>
+      <node id="8" name="xrv8" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="29c600a0-66a8-4b56-842f-d5d84e84635d" delay="0" icon="XR.png" config="0" left="981" top="387">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="33"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="17"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="13"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="15"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="23"/>
+      </node>
+      <node id="9" name="xrv9" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="d64b1efb-ed19-420c-8e8b-5cf73cbd793d" delay="0" icon="XR.png" config="0" left="981" top="522">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="34"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="17"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="14"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="16"/>
+      </node>
+      <node id="10" name="xrv10" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="3684c479-21b5-463f-a232-01e6b5db0420" delay="0" icon="XR.png" config="0" left="1176" top="348">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="36"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="8"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="9"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="15"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="41"/>
+      </node>
+      <node id="11" name="xrv11" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="1b1304ff-f32d-4e72-b947-bb4d28fad164" delay="0" icon="XR.png" config="0" left="1179" top="561">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="34"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="8"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="10"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="16"/>
+      </node>
+      <node id="12" name="xrv12" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="3558d5d8-a5b4-429c-a75d-11f0c521fc7d" delay="0" icon="XR.png" config="0" left="1338" top="330">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="36"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="9"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="11"/>
+        <interface id="7" name="Gi0/0/0/6" type="ethernet" network_id="27"/>
+        <interface id="8" name="Gi0/0/0/7" type="ethernet" network_id="28"/>
+      </node>
+      <node id="13" name="xrv13" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="12" uuid="52626bd5-aa3a-4549-91d9-f5c3f4515b58" delay="0" icon="XR.png" config="0" left="1347" top="576">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="34"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="10"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="11"/>
+        <interface id="7" name="Gi0/0/0/6" type="ethernet" network_id="29"/>
+        <interface id="8" name="Gi0/0/0/7" type="ethernet" network_id="30"/>
+      </node>
+      <node id="14" name="xrv14" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="8" uuid="38d9eb0b-86f5-4112-8986-27052a1e60b6" delay="0" icon="XR.png" config="0" left="828" top="153">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="33"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="22"/>
+      </node>
+      <node id="15" name="xrv15" type="qemu" template="xrv" image="xrv-k9-6.5.1.31I" console="telnet" cpu="1" cpulimit="0" ram="3072" ethernet="8" uuid="ef5cf763-b9b9-4f69-a718-7720b93ee00e" delay="0" icon="XR.png" config="0" left="984" top="147">
+        <interface id="0" name="Mgmt0/0/CPU0/0" type="ethernet" network_id="33"/>
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="23"/>
+      </node>
+      <node id="16" name="vIOS16" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="512" ethernet="4" uuid="c7c0513a-4207-44cf-9c6d-413a3283d1ef" delay="0" icon="Router.png" config="0" left="219" top="243">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="24"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="35"/>
+      </node>
+      <node id="17" name="vIOS17" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="512" ethernet="4" uuid="ff0a8fc3-251e-430a-ab78-09dd473d5a77" delay="0" icon="Router.png" config="0" left="222" top="465">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="25"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="31"/>
+        <interface id="2" name="Gi0/2" type="ethernet" network_id="32"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="37"/>
+      </node>
+      <node id="18" name="vIOS18" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="512" ethernet="4" uuid="4ca1179b-8049-429c-9c16-6debca154054" delay="0" icon="Router.png" config="0" left="216" top="690">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="26"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="34"/>
+      </node>
+      <node id="19" name="vIOS19" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="512" ethernet="4" uuid="b9b51b7d-3f8b-48d5-9f90-8e8a4f791d68" delay="0" icon="Router.png" config="0" left="1515" top="225">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="27"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="36"/>
+      </node>
+      <node id="20" name="vIOS20" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="512" ethernet="4" uuid="b7f366c1-ef3a-4dc5-8537-88451e2fb5e5" delay="0" icon="Router.png" config="0" left="1539" top="459">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="28"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="30"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="38"/>
+      </node>
+      <node id="21" name="vIOS21" type="qemu" template="vios" image="vios-adventerprisek9-m-15.6.2T" console="telnet" cpu="1" cpulimit="0" ram="512" ethernet="4" uuid="8df5a2e1-881e-454a-9607-0de2f1a2289e" delay="0" icon="Router.png" config="0" left="1533" top="684">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="29"/>
+        <interface id="3" name="Gi0/3" type="ethernet" network_id="34"/>
+      </node>
+      <node id="22" name="VRR-Linux22" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="2" uuid="930d863b-ce9d-4cc9-b1dc-d565164d5e7c" firstmac="00:50:04:00:16:00" delay="0" icon="Server.png" config="0" left="708" top="252">
+        <interface id="0" name="e0" type="ethernet" network_id="35"/>
+        <interface id="1" name="e1" type="ethernet" network_id="40"/>
+      </node>
+      <node id="23" name="VRR-Linux23" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="2" uuid="f54bc9be-502a-41e0-9366-3601da253c2f" firstmac="00:50:04:00:17:00" delay="0" icon="Server.png" config="0" left="1104" top="201">
+        <interface id="0" name="e0" type="ethernet" network_id="36"/>
+        <interface id="1" name="e1" type="ethernet" network_id="41"/>
+      </node>
+      <node id="24" name="MGT_Linux24" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="45948fa0-c1da-4e41-baa3-1f5f65eb2ff0" firstmac="00:50:04:00:18:00" delay="0" icon="Server.png" config="0" left="264" top="885">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="25" name="MGT_Linux25" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="3f579052-2bff-402c-b876-6365d07db184" firstmac="00:50:04:00:19:00" delay="0" icon="Server.png" config="0" left="417" top="897">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="26" name="MGT_Linux26" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="bd0453d7-177f-4add-85b9-10d75768e8ac" firstmac="00:50:04:00:1a:00" delay="0" icon="Server.png" config="0" left="540" top="900">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="27" name="MGT_Linux27" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="b8e6a79a-f559-44c1-b6d6-5f642dd276ef" firstmac="00:50:04:00:1b:00" delay="0" icon="Server.png" config="0" left="699" top="897">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="28" name="MGT_Linux28" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="e57c66b1-f345-4e5f-92f8-794d7614c91c" firstmac="00:50:04:00:1c:00" delay="0" icon="Server.png" config="0" left="819" top="888">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="29" name="MGT_Linux29" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="57551a6a-7fe3-4c33-b88d-e5c14b419c3b" firstmac="00:50:04:00:1d:00" delay="0" icon="Server.png" config="0" left="981" top="882">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="30" name="MGT_Linux30" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="b5a52ccc-3fbd-4264-b529-e9d472910871" firstmac="00:50:04:00:1e:00" delay="0" icon="Server.png" config="0" left="1155" top="879">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="31" name="MGT_Linux31" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="vnc" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="613bdaf3-14ed-4c33-8d4d-5bd189ed402e" firstmac="00:50:04:00:1f:00" delay="0" icon="Server.png" config="0" left="1344" top="876">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+      <node id="32" name="LAB_MGT" type="qemu" template="linux" image="linux-ubuntu-server-16.04.02-netdevops" console="telnet" cpu="1" cpulimit="0" ram="2048" ethernet="1" uuid="76ee5c53-8f7a-4bfa-9163-b82137f55f5d" firstmac="00:50:04:00:20:00" delay="0" icon="Server.png" config="0" left="1218" top="993">
+        <interface id="0" name="e0" type="ethernet" network_id="39"/>
+      </node>
+    </nodes>
+    <networks>
+      <network id="1" type="bridge" name="Net-xrv1iface_1" left="729" top="427" visibility="0"/>
+      <network id="2" type="bridge" name="Net-xrv1iface_2" left="729" top="427" visibility="0"/>
+      <network id="3" type="bridge" name="Net-xrv1iface_3" left="729" top="427" visibility="0"/>
+      <network id="4" type="bridge" name="Net-xrv1iface_4" left="732" top="424" visibility="0"/>
+      <network id="5" type="bridge" name="Net-xrv2iface_2" left="732" top="556" visibility="0"/>
+      <network id="6" type="bridge" name="Net-xrv2iface_3" left="732" top="556" visibility="0"/>
+      <network id="7" type="bridge" name="Net-xrv2iface_4" left="732" top="556" visibility="0"/>
+      <network id="8" type="bridge" name="Net-xrv10iface_1" left="1236" top="388" visibility="0"/>
+      <network id="9" type="bridge" name="Net-xrv10iface_2" left="1236" top="388" visibility="0"/>
+      <network id="10" type="bridge" name="Net-xrv11iface_2" left="1239" top="601" visibility="0"/>
+      <network id="11" type="bridge" name="Net-xrv12iface_2" left="1389" top="349" visibility="0"/>
+      <network id="17" type="bridge" name="Net-xrv8iface_1" left="1041" top="427" visibility="0"/>
+      <network id="12" type="bridge" name="Net-xrv6iface_1" left="891" top="424" visibility="0"/>
+      <network id="13" type="bridge" name="Net-xrv6iface_2" left="891" top="424" visibility="0"/>
+      <network id="14" type="bridge" name="Net-xrv7iface_2" left="894" top="559" visibility="0"/>
+      <network id="15" type="bridge" name="Net-xrv8iface_3" left="1041" top="427" visibility="0"/>
+      <network id="16" type="bridge" name="Net-xrv9iface_3" left="1041" top="562" visibility="0"/>
+      <network id="18" type="bridge" name="Net-xrv1iface_5" left="732" top="424" visibility="0"/>
+      <network id="19" type="bridge" name="Net-xrv1iface_6" left="732" top="424" visibility="0"/>
+      <network id="20" type="bridge" name="Net-xrv2iface_5" left="732" top="556" visibility="0"/>
+      <network id="21" type="bridge" name="Net-xrv2iface_6" left="735" top="565" visibility="0"/>
+      <network id="22" type="bridge" name="Net-xrv14iface_1" left="789" top="247" visibility="0"/>
+      <network id="23" type="bridge" name="Net-xrv15iface_1" left="990" top="250" visibility="0"/>
+      <network id="24" type="bridge" name="Net-xrv3iface_7" left="498" top="361" visibility="0"/>
+      <network id="25" type="bridge" name="Net-vIOS17iface_0" left="282" top="517" visibility="0"/>
+      <network id="26" type="bridge" name="Net-vIOS18iface_0" left="288" top="664" visibility="0"/>
+      <network id="27" type="bridge" name="Net-vIOS19iface_0" left="1581" top="307" visibility="0"/>
+      <network id="28" type="bridge" name="Net-xrv12iface_8" left="1398" top="370" visibility="0"/>
+      <network id="29" type="bridge" name="Net-xrv13iface_7" left="1395" top="619" visibility="0"/>
+      <network id="30" type="bridge" name="Net-vIOS20iface_1" left="1599" top="499" visibility="0"/>
+      <network id="31" type="bridge" name="Net-vIOS17iface_1" left="282" top="517" visibility="0"/>
+      <network id="32" type="bridge" name="Net-vIOS17iface_2" left="282" top="517" visibility="0"/>
+      <network id="33" type="pnet9" name="MGT33" left="900" top="294" visibility="1"/>
+      <network id="34" type="pnet9" name="MGT34" left="900" top="681" visibility="1"/>
+      <network id="35" type="pnet9" name="MGT35" left="546" top="252" visibility="1"/>
+      <network id="36" type="pnet9" name="MGT36" left="1275" top="216" visibility="1"/>
+      <network id="37" type="pnet9" name="MGT37" left="372" top="414" visibility="1"/>
+      <network id="38" type="pnet9" name="MGT38" left="1638" top="447" visibility="1"/>
+      <network id="39" type="pnet9" name="MGT39" left="792" top="1008" visibility="1"/>
+      <network id="40" type="bridge" name="Net-xrv1iface_7" left="732" top="424" visibility="0"/>
+      <network id="41" type="bridge" name="Net-VRR-Linux23iface_1" left="1143" top="262" visibility="0"/>
+    </networks>
+  </topology>
+  <objects>
+    <textobjects>
+      <textobject id="1" name="square1" type="square">
+        <data>PGRpdiBpZD0iY3VzdG9tU2hhcGUxIiBjbGFzcz0iY3VzdG9tU2hhcGUgY29udGV4dC1tZW51IHVpLXJlc2l6YWJsZSBqdGstZHJhZ2dhYmxlIGRyYWdzdG9wcGVkIiBkYXRhLXBhdGg9IjEiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmU7IHotaW5kZXg6IDk5OTsgcG9zaXRpb246IGFic29sdXRlOyBsZWZ0OiAzOTZweDsgdG9wOiAxMTRweDsgd2lkdGg6IDUzN3B4OyBoZWlnaHQ6IDU3MnB4OyIgd2lkdGg9IjEyMHB4IiBoZWlnaHQ9IjEyMHB4IiBuYW1lPSJzcXVhcmUxIj48c3ZnIHdpZHRoPSI1MzciIGhlaWdodD0iNTcyIj48cmVjdCB3aWR0aD0iNTM3IiBoZWlnaHQ9IjU3MiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiNmZjI2MDAiICI9IiI+PC9yZWN0PlNvcnJ5LCB5b3VyIGJyb3dzZXIgZG9lcyBub3Qgc3VwcG9ydCBpbmxpbmUgU1ZHLjwvc3ZnPjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLWUiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1zIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtc2UgdWktaWNvbiB1aS1pY29uLWdyaXBzbWFsbC1kaWFnb25hbC1zZSIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjwvZGl2Pg==</data>
+      </textobject>
+      <textobject id="2" name="square1" type="square">
+        <data>PGRpdiBpZD0iY3VzdG9tU2hhcGUyIiBjbGFzcz0iY3VzdG9tU2hhcGUgY29udGV4dC1tZW51IGp0ay1kcmFnZ2FibGUgdWktcmVzaXphYmxlIGRyYWdzdG9wcGVkIiBkYXRhLXBhdGg9IjIiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmU7IHotaW5kZXg6IDk5OTsgcG9zaXRpb246IGFic29sdXRlOyBsZWZ0OiA5NTdweDsgdG9wOiAxMTRweDsgd2lkdGg6IDUzN3B4OyBoZWlnaHQ6IDU3MnB4OyIgd2lkdGg9IjEyMHB4IiBoZWlnaHQ9IjEyMHB4IiBuYW1lPSJzcXVhcmUxIj48c3ZnIHdpZHRoPSI1MzciIGhlaWdodD0iNTcyIj48cmVjdCB3aWR0aD0iNTM3IiBoZWlnaHQ9IjU3MiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiNmZjI2MDAiICI9IiI+PC9yZWN0PlNvcnJ5LCB5b3VyIGJyb3dzZXIgZG9lcyBub3Qgc3VwcG9ydCBpbmxpbmUgU1ZHLjwvc3ZnPjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLWUiIHN0eWxlPSJ6LWluZGV4OiA5MDsiPjwvZGl2PjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLXMiIHN0eWxlPSJ6LWluZGV4OiA5MDsiPjwvZGl2PjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLXNlIHVpLWljb24gdWktaWNvbi1ncmlwc21hbGwtZGlhZ29uYWwtc2UiIHN0eWxlPSJ6LWluZGV4OiA5MDsiPjwvZGl2PjwvZGl2Pg==</data>
+      </textobject>
+      <textobject id="3" name="txt 3" type="text">
+        <data>PGRpdiBpZD0iY3VzdG9tVGV4dDMiIGNsYXNzPSJjdXN0b21TaGFwZSBjdXN0b21UZXh0IGNvbnRleHQtbWVudSBqdGstZHJhZ2dhYmxlIHVpLXJlc2l6YWJsZS1hdXRvaGlkZSIgZGF0YS1wYXRoPSIzIiBzdHlsZT0iZGlzcGxheTogaW5saW5lOyBwb3NpdGlvbjogYWJzb2x1dGU7IGxlZnQ6IDQ0N3B4OyB0b3A6IDE0MXB4OyBjdXJzb3I6IG1vdmU7IHotaW5kZXg6IDEwMDE7IGhlaWdodDogNDBweDsgd2lkdGg6IGF1dG87Ij48cCBhbGlnbj0iY2VudGVyIiBzdHlsZT0idmVydGljYWwtYWxpZ246dG9wO2NvbG9yOiMwMDAwMDA7YmFja2dyb3VuZC1jb2xvcjojZmZmZmZmO2ZvbnQtc2l6ZToyMHB4O2ZvbnQtd2VpZ2h0OiBib2xkOyIgY29udGVudGVkaXRhYmxlPSJmYWxzZSIgY2xhc3M9IiI+IEFTIDEwMCAgIElTSVMmbmJzcDsgTDI8L3A+PC9kaXY+</data>
+      </textobject>
+      <textobject id="4" name="txt 4" type="text">
+        <data>PGRpdiBpZD0iY3VzdG9tVGV4dDQiIGNsYXNzPSJjdXN0b21TaGFwZSBjdXN0b21UZXh0IGNvbnRleHQtbWVudSBqdGstZHJhZ2dhYmxlIGRyYWdzdG9wcGVkIHVpLXJlc2l6YWJsZS1hdXRvaGlkZSIgZGF0YS1wYXRoPSI0IiBzdHlsZT0iZGlzcGxheTogaW5saW5lOyBwb3NpdGlvbjogYWJzb2x1dGU7IGxlZnQ6IDExNDlweDsgdG9wOiAxMzVweDsgY3Vyc29yOiBtb3ZlOyB6LWluZGV4OiAxMDAxOyBoZWlnaHQ6IDQwcHg7IHdpZHRoOiBhdXRvOyI+PHAgYWxpZ249ImNlbnRlciIgc3R5bGU9InZlcnRpY2FsLWFsaWduOnRvcDtjb2xvcjojMDAwMDAwO2JhY2tncm91bmQtY29sb3I6I2ZmZmZmZjtmb250LXNpemU6MjBweDtmb250LXdlaWdodDogYm9sZDsiIGNvbnRlbnRlZGl0YWJsZT0iZmFsc2UiIGNsYXNzPSIiPiBBUyAyMDAgT1NQRiBBUkVBIDA8L3A+PC9kaXY+</data>
+      </textobject>
+    </textobjects>
+  </objects>
+</lab>
