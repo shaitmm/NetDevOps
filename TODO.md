@@ -3,16 +3,22 @@
 ## 1.0 lab base informations
 
 - [ ] login lab
-  - [ ] mac osx
+  - [x] mac osx
   - [ ] windows 10
-  
+- [ ] customize img
+  - [x] vIOS
+  - [x] xrvr
+  - [ ] Linux  
 - [ ] lab base infomations
     - config templates
-      - SSH Server config
+      - [ ] SSH Server config
+      - [ ] interface
       - protocol (IGP/BGP)
-      - MPLS VPN
-      - internet routes
-- [ ] assign ip address in the topology/make a csv file and markdown file
+         - [ ] ISIS
+         - [ ] BGP
+         - [ ] Segement Routing
+      - [ ] MPLS VPN
+- [x] assign ip address in the topology/make a csv file and markdown file
    - mgt interface and ipaddress
    - interconnect ip address 
 
