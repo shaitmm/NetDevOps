@@ -1,0 +1,10 @@
+{# interface config #}
+{% for interface in interfaces %}
+interface {{ interface.name }}
+ip address {{ interface.ipaddress }} 255.255.255.252
+no shutdown
+{% endfor %}
+
+{# end #}
+end
+

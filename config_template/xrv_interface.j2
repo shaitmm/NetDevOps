@@ -1,0 +1,15 @@
+{# interface config #}
+{% for interface in interfaces %}
+interface {{ interface.name }}
+ipv4 address {{ interface.ipaddress }}/30
+no shutdown
+{% endfor %}
+{# commit #}
+{% if commit %}
+commit
+
+{#end#}
+end
+{% else %}
+{% endif %}
+

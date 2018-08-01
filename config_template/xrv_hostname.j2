@@ -1,0 +1,11 @@
+{# set hostname #}
+hostname {{ hostname }}
+{# commit #}
+{% if commit %}
+commit
+
+{#end#}
+end
+{% else %}
+{% endif %}
+

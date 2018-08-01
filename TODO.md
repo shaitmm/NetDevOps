@@ -11,8 +11,10 @@
   - [ ] Linux  
 - [ ] lab base infomations
     - config templates
-      - [ ] SSH Server config
-      - [ ] interface
+      - [x] SSH Server config
+      - [x] interface/mgt
+      - [x] lldp
+      - [x] hostname
       - protocol (IGP/BGP)
          - [ ] ISIS
          - [ ] BGP

@@ -1,0 +1,12 @@
+{# mgmt interface ip #}
+interface MgmtEth0/0/CPU0/0
+ipv4 address {{ ipaddress }}/16
+no shutdown
+{# commit #}
+{% if commit %}
+commit
+
+{#end#}
+end
+{% else %}
+{% endif %}

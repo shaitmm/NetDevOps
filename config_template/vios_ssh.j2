@@ -1,0 +1,22 @@
+{# hostname #}
+hostname {{ hostname }}
+
+{# domain name (ssh server need domain name) #}
+ip domain name sha-se.cisco.com
+
+{# RSA key generate #}
+crypto key generate rsa modulus 1024
+
+{# aaa #}
+aaa new-model
+
+{# username password #}
+username admin privilege 15 password 0 admin
+
+{# line vty #}
+line vty 0 4
+ privilege level 15
+ transport input all
+
+{# end #}
+end
