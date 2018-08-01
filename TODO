@@ -1,0 +1,60 @@
+# TODO LIST
+
+## 1.0 lab base informations
+
+- [ ] login lab
+  - [ ] mac osx
+  - [ ] windows 10
+  
+- [ ] lab base infomations
+    - config templates
+      - SSH Server config
+      - protocol (IGP/BGP)
+      - MPLS VPN
+      - internet routes
+- [ ] assign ip address in the topology/make a csv file and markdown file
+   - mgt interface and ipaddress
+   - interconnect ip address 
+
+## 2.0 docs 
+- [x] customzie eve img
+- [x] make a training topology
+
+## 3.0 LABS
+
+### 3.1 CASE 1: use telnet and ssh login the network device
+
+ - init config (telnet console)
+    - set hostname 
+    - enable ssh server
+    - mgt ip address
+    - lldp enable
+ - config device (netmiko)
+    - interface ip address config 
+    - isis config
+    - sr config
+    - bgp config
+    - netconf
+    
+### 3.2 CASE 2: use AsyncIO to backup the device configure 
+ - pexpect asyncIO
+
+### 3.3 CASE 3: use netconf get lldp and isis topology
+ - get lldp neighbor
+ - get isis topology
+
+### 3.4 CASE4: use yang-expoler to get network device infos
+ - how to use yang-expoler
+
+### 3.5 CASE5: use exabgp to manage the bgp routes
+ - exabgp to make a bgp peer
+ - exabgp to send a ipv4 route
+ - collect BGP-LS routes
+ 
+### 3.6 CASE6: use RestAPI with XTC
+ - use case 5's BGP-LS informations to compute a path
+ - send a SR-Policy to device
+ 
+
+
+
