@@ -8,7 +8,27 @@
 - [ ] customize img
   - [x] vIOS
   - [x] xrvr
-  - [ ] Linux  
+  - [ ] Linux 
+     - [ ] python3 venv
+     - [ ] python packages
+         - pexpect
+         - netmiko
+         - networkx
+         - netaddr
+         - exabgp
+         - jinja2
+         - requests
+         - flask
+         - ncclient
+         - pyaml
+         - lxml
+         - textfsm          
+     - [ ] jupyter server
+     - [ ] yang-explorer
+     - [ ] set screen
+     - [x] git
+     - [x] set proxy
+  
 - [ ] lab base infomations
     - config templates
       - [x] SSH Server config
@@ -51,7 +71,7 @@
  - get lldp neighbor
  - get isis topology
 
-### 3.4 CASE4: use yang-expoler to get network device infos
+### 3.4 CASE4: use yang-exporler to get network device infos
  - how to use yang-expoler
 
 ### 3.5 CASE5: use exabgp to manage the bgp routes
