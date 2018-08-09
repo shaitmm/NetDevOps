@@ -1,0 +1,93 @@
+xrv1:
+  port: 33281
+  address: 172.20.0.1
+xrv2:
+  port: 33282
+  address: 172.20.0.1
+xrv3:
+  port: 33283
+  address: 172.20.0.1
+xrv4:
+  port: 33284
+  address: 172.20.0.1
+xrv5:
+  port: 33285
+  address: 172.20.0.1
+xrv6:
+  port: 33286
+  address: 172.20.0.1
+xrv7:
+  port: 33287
+  address: 172.20.0.1
+xrv8:
+  port: 33288
+  address: 172.20.0.1
+xrv9:
+  port: 33289
+  address: 172.20.0.1
+xrv10:
+  port: 33290
+  address: 172.20.0.1
+xrv11:
+  port: 33291
+  address: 172.20.0.1
+xrv12:
+  port: 33292
+  address: 172.20.0.1
+xrv13:
+  port: 33293
+  address: 172.20.0.1
+xrv14:
+  port: 33294
+  address: 172.20.0.1
+xrv15:
+  port: 33295
+  address: 172.20.0.1
+vIOS16:
+  port: 33296
+  address: 172.20.0.1
+vIOS17:
+  port: 33297
+  address: 172.20.0.1
+vIOS18:
+  port: 33298
+  address: 172.20.0.1
+vIOS19:
+  port: 33299
+  address: 172.20.0.1
+vIOS20:
+  port: 33300
+  address: 172.20.0.1
+vIOS21:
+  port: 33301
+  address: 172.20.0.1
+VRR-Linux22:
+  port: 33302
+  address: 172.20.0.1
+VRR-Linux23:
+  port: 33303
+  address: 172.20.0.1
+MGT_Linux24:
+  port: 33304
+  address: 172.20.0.1
+MGT_Linux25:
+  port: 33305
+  address: 172.20.0.1
+MGT_Linux26:
+  port: 33306
+  address: 172.20.0.1
+MGT_Linux27:
+  port: 33307
+  address: 172.20.0.1
+MGT_Linux28:
+  port: 33308
+  address: 172.20.0.1
+MGT_Linux29:
+  port: 33309
+  address: 172.20.0.1
+MGT_Linux30:
+  port: 33310
+  address: 172.20.0.1
+MGT_Linux31:
+  port: 33311
+  address: 172.20.0.1
