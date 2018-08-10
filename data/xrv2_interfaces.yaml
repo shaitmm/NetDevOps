@@ -1,0 +1,16 @@
+interfaces:
+  - name: Gi0/0/0/0
+    ipaddress: 99.1.2.2
+  - name: Gi0/0/0/1
+    ipaddress: 99.1.2.29
+  - name: Gi0/0/0/2
+    ipaddress: 99.1.2.33
+  - name: Gi0/0/0/3
+    ipaddress: 99.1.2.37
+  - name: Gi0/0/0/4
+    ipaddress: 99.1.2.41
+  - name: Gi0/0/0/5
+    ipaddress: 99.1.2.45  
+    
+commit: True
+

@@ -1,5 +1,5 @@
-import sys
-sys.path.append("../lib")
+#import sys
+#sys.path.append("../lib")
 
 from telnet import Telnet
 '''

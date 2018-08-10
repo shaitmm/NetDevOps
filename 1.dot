@@ -1,0 +1,27 @@
+
+
+
+
+/*
+ * Network topology in DOT format. For information on using this to
+ * generate graphical representations see http://www.graphviz.org
+ */
+graph "level-2" {
+  graph [rankdir=LR];
+  node [fontsize=9];
+  edge [fontsize=6];
+  "NCS-1" [label="\N\n1.1.1.1"];
+  "NCS-1" -- "NCS-2";
+  "NCS-1" -- "NCS-3";
+  "NCS-1" -- "NCS-6";
+  "NCS-2" [label="\N\n2.2.2.2"];
+  "NCS-2" -- "NCS-6";
+  "NCS-2" -- "NCS-5";
+  "NCS-3" [label="\N\n3.3.3.3"];
+  "NCS-3" -- "NCS-4";
+  "NCS-3" -- "NCS-5";
+  "NCS-4" [label="\N\n4.4.4.4"];
+  "NCS-4" -- "NCS-5";
+  "NCS-5" [label="\N\n5.5.5.5"];
+  "NCS-6" [label="\N\n6.6.6.6"];
+}
