@@ -38,7 +38,8 @@ for d in devices_info:
         tn = Telnet(host="172.20.0.1", port=d.get("port"), device_type=device_type, debug=True)
         cfgs_list = []
         cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
-        cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
+        cfgs_list.append("no shutdown")
+        cfgs_list.append("ipv4 address %s 255.255.0.0" %d.get("mgt_ip"))
 
         tn.send_config_set(cfgs_list)
 
