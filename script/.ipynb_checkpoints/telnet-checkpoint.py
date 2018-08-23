@@ -63,9 +63,15 @@ class Telnet(object):
                 self.sendcmd(self.password)
             elif result[0] in [2, 3, 4]:
                 print("Login right")
+                self.set_terminal_lenght_zero()
                 break
             else:
                 print("Login Fail")
+                
+    def set_terminal_lenght_zero(self):
+        if self.device_type.lower() == "ios":
+            self.sendcmd("enable")
+        self.sendcmd("terminal length 0")
 
     def config_hostname(self, hostname):
         if self.device_type.lower() == "ios":

@@ -1,0 +1,6 @@
+as_number: 200
+neighbors:
+ - peer_ipaddress: 99.1.1.1
+   remote_as: 200
+ - peer_ipaddress: 99.1.1.2
+   remote_as: 200

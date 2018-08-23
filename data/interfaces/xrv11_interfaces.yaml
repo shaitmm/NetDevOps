@@ -1,0 +1,10 @@
+
+interfaces:
+  - name: Gi0/0/0/2
+    ipaddress: 99.1.4.14
+  - name: Gi0/0/0/0
+    ipaddress: 99.1.4.18
+  - name: Gi0/0/0/1
+    ipaddress: 99.1.4.29
+  - name: Loopback0
+    ipaddress: 99.1.1.4

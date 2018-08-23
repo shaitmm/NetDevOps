@@ -1,0 +1,20 @@
+router isis lab
+ address-family ipv4 unicast
+  mpls traffic-eng level-2-only
+  mpls traffic-eng router-id Loopback0
+  segment-routing mpls sr-prefer
+  segment-routing prefix-sid-map advertise-local
+  
+{% for interface in interfaces %}
+
+{% if interface.name == "Loopback0" %}
+interface {{interface.name}}
+  address-family ipv4 unicast
+   prefix-sid absolute {{interface.prefix_id}}
+{%else%}
+interface {{interface.name}}
+  address-family ipv4 unicast
+  fast-reroute per-prefix
+  fast-reroute per-prefix ti-lfa 
+{%endif%}
+{%endfor%}

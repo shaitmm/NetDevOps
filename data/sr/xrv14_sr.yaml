@@ -1,0 +1,11 @@
+interfaces:
+  - name: Loopback0
+    prefix_id: 16014
+  - name: GigabitEthernet0/0/0/0
+  
+  
+  
+  
+  
+  
+  

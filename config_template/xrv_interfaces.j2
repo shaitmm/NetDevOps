@@ -1,8 +1,13 @@
 {# interface config #}
 {% for interface in interfaces %}
+{% if interface.name.startswith("Loopback")%}
+interface {{interface.name}}
+   ipv4 address {{interface.ipaddress}}/32
+{% else %}
 interface {{ interface.name }}
   ipv4 address {{ interface.ipaddress }}/30
   no shutdown
+{%endif%}
 {% endfor %}
 {# commit #}
 {% if commit %}

@@ -1,0 +1,21 @@
+router isis lab
+ is-type level-2-only
+ net {{ iso_address }}
+ nsr
+ distribute link-state
+ nsf ietf
+ log adjacency changes
+ address-family ipv4 unicast
+  metric-style wide level 2
+
+{% for interface in interfaces %}
+{% if interface.name == "Loopback0" %}
+interface {{interface.name}}
+  address-family ipv4 unicast
+{%else%}
+interface {{interface.name}}
+  point-to-point
+  hello-padding disable
+  address-family ipv4 unicast
+{%endif%}
+{%endfor%}

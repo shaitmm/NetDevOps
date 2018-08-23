@@ -1,0 +1,13 @@
+iso_address: 49.0002.0000.0000.0011.00
+interfaces:
+  - name: Loopback0
+  - name: GigabitEthernet0/0/0/0
+  - name: GigabitEthernet0/0/0/1
+  - name: GigabitEthernet0/0/0/2
+  
+  
+  
+  
+  
+  
+  

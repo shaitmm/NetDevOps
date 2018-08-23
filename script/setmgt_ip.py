@@ -1,6 +1,4 @@
-import sys
-sys.path.append("../lib")
-
+import threading
 from telnet import Telnet
 
 devices_info = [{'port': 33281, 'hostname': 'xrv1', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.101"},
@@ -27,26 +25,31 @@ devices_info = [{'port': 33281, 'hostname': 'xrv1', 'username': 'admin', 'passwo
                ]
 
 
-
-
-
-
-for d in devices_info:
+def setmgt_ip(d):
     device_type =""
     if "xrv" in d.get("hostname"):
         device_type = "iosxr"
         tn = Telnet(host="172.20.0.1", port=d.get("port"), device_type=device_type, debug=True)
         cfgs_list = []
         cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
-        cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
-
+        cfgs_list.append("no shutdown")
+        cfgs_list.append("ipv4 address %s 255.255.0.0" %d.get("mgt_ip"))
         tn.send_config_set(cfgs_list)
-
-
-        
-        
         
     if "IOS" in d.get("hostname"):
         device_type = "ios" 
         tn = Telnet(host="172.20.0.1", port=d.get("port"), device_type=device_type, debug=True)
+        cfgs_list = []
+        cfgs_list.append("interface gi0/3")
+        cfgs_list.append("no shutdown")
+        cfgs_list.append("ip address %s 255.255.0.0" %d.get("mgt_ip"))
+        tn.send_config_set(cfgs_list)
 
+if __name__ == "__main__":
+    thread_tasks = []
+    for device in devices_info:
+        task = threading.Thread(target=setmgt_ip, args=(device,))
+        task.start()
+        thread_tasks.append(task)
+    for t in thread_tasks:
+        t.join()

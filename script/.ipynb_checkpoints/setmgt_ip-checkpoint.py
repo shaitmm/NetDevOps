@@ -1,9 +1,8 @@
 import sys
-sys.path.append("../lib")
 
 from telnet import Telnet
 
-iosxr = [{'port': 33281, 'hostname': 'xrv1', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.101"},
+devices_info = [{'port': 33281, 'hostname': 'xrv1', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.101"},
                 {'port': 33282, 'hostname': 'xrv2', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.102"},
                 {'port': 33283, 'hostname': 'xrv3', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.103"},
                 {'port': 33284, 'hostname': 'xrv4', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.104"},
@@ -18,10 +17,7 @@ iosxr = [{'port': 33281, 'hostname': 'xrv1', 'username': 'admin', 'password': 'a
                 {'port': 33293, 'hostname': 'xrv13', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.113"},
                 {'port': 33294, 'hostname': 'xrv14', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.114"},
                 {'port': 33295, 'hostname': 'xrv15', 'username': 'admin', 'password': 'admin',"mgt_ip": "172.20.3.115"},
-               ]
-
-
-vios = [{'port': 33296, 'hostname': 'vIOS16', 'username': 'admin', 'password': 'admin', "mgt_ip": "172.20.3.116"},
+                {'port': 33296, 'hostname': 'vIOS16', 'username': 'admin', 'password': 'admin', "mgt_ip": "172.20.3.116"},
                 {'port': 33297, 'hostname': 'vIOS17', 'username': 'admin', 'password': 'admin', "mgt_ip": "172.20.3.117"},
                 {'port': 33298, 'hostname': 'vIOS18', 'username': 'admin', 'password': 'admin', "mgt_ip": "172.20.3.118"},
                 {'port': 33299, 'hostname': 'vIOS19', 'username': 'admin', 'password': 'admin', "mgt_ip": "172.20.3.119"},
@@ -29,13 +25,27 @@ vios = [{'port': 33296, 'hostname': 'vIOS16', 'username': 'admin', 'password': '
                 {'port': 33301, 'hostname': 'vIOS21', 'username': 'admin', 'password': 'admin', "mgt_ip": "172.20.3.121"},
                ]
 
-##  set xrvx mgt interface ip:
+
+
+
+
+
 for d in devices_info:
     device_type =""
     if "xrv" in d.get("hostname"):
         device_type = "iosxr"
+        tn = Telnet(host="172.20.0.1", port=d.get("port"), device_type=device_type, debug=True)
+        cfgs_list = []
+        cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
+        cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
+
+        tn.send_config_set(cfgs_list)
+
+
+        
+        
+        
     if "IOS" in d.get("hostname"):
         device_type = "ios" 
-    tn = Telnet(host="172.20.0.1", port=d.get("port"), device_type=device_type, debug=True)
-    tn.send_config_set(d.get("hostname"))
+        tn = Telnet(host="172.20.0.1", port=d.get("port"), device_type=device_type, debug=True)
 

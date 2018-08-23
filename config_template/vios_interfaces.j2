@@ -1,0 +1,10 @@
+{# interface config #}
+{% for interface in interfaces %}
+interface {{ interface.name }}
+ip address {{ interface.ipaddress }} {% if interface.name.startswith("Loopback")%}255.255.255.255{%else%}255.255.255.252{%endif%}
+no shutdown
+{% endfor %}
+
+{# end #}
+end
+

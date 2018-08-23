@@ -1,0 +1,23 @@
+as_number: 100
+neighbors:
+ - peer_ipaddress: 99.1.0.1
+   remote_as: 100
+   rr: true
+ - peer_ipaddress: 99.1.0.3
+   remote_as: 100
+   rr: true
+ - peer_ipaddress: 99.1.0.4
+   remote_as: 100
+   rr: true
+ - peer_ipaddress: 99.1.0.5
+   remote_as: 100
+   rr: true
+ - peer_ipaddress: 99.1.0.6
+   remote_as: 100
+   rr: true
+ - peer_ipaddress: 99.1.0.7
+   remote_as: 100
+   rr: true
+ - peer_ipaddress: 99.1.0.8
+   remote_as: 100
+   rr: true
