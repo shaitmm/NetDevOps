@@ -34,6 +34,10 @@ def setmgt_ip(d):
         cfgs_list.append("interface mgmtEth 0/0/CPU0/0")
         cfgs_list.append("no shutdown")
         cfgs_list.append("ipv4 address %s 255.255.0.0" %d.get("mgt_ip"))
+<<<<<<< HEAD
+=======
+
+>>>>>>> e5cb7b6fff33bab1c3ba587054d7d9923c8cdc99
         tn.send_config_set(cfgs_list)
         
     if "IOS" in d.get("hostname"):
