@@ -25,8 +25,8 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 IP | port| protocol| username| password
 ---|----|----|---|---|-----
-10.74.82.244|22|SSH||
-10.74.82.253|22|SSH||
+10.74.82.244|22|SSH|||
+10.74.82.253|22|SSH|||
 
 ssh private key:
 
@@ -50,8 +50,9 @@ Host eve2
 ```
 
 #### 2.2.2 web登录信息:
+
 IP | port| protocol| username| password
----|----|----|---|---|-----
+---|---- |---------|---------|---------  
 10.74.82.244|80|http|netdevops|netdevops
 10.74.82.253|80|http|netdevops|netdevops
 
@@ -101,22 +102,31 @@ MGT_Linux33       | SSH      |2233 | root     | eve@123
 <font color=red>可以忽略这部分</font>
 
  ```
- ssh -J eve[1-2] -l <username> <Device IP>
+ ssh -J MGT_Linux -l <username> <Device IP>
  ```
-   - -J eve[1-2] 为SSH跳板
+   - -J MGT_Linux 为SSH跳板. 我们可以在mac的本地配置ssh的配置文件。
+
+ ```
+    MAC 中ssh client 的配置文件为：
+    
+    Host MGT_Linux
+         Hostname 10.74.82.244
+         User  root
+         Port  2224
+ ```
 
   
 
-### 2.3 gitlab 
+### 2.3 Cisco Internal GitHub(Enterprise version) 
 # **两台服务器共用<font color=red>一台</font>gitlab**
 # <font color=red>所有的文档和代码都在这里。</font>
-可以不用注册账户，也可以注册账户。
+可以使用CEC账号登录。也可以不登录。
 
-[gitlab] (http://10.74.82.244:8000/xinyu3/netdevops-training/tree/master)
+地址为：
+[Cisco github] (https://wwwin-github.cisco.com)
 
-
-
-http://10.74.82.244:8000/xinyu3/netdevops-training/tree/master
+项目仓库为：
+https://wwwin-github.cisco.com/ChinaSE/netdevops-training/
 
 
 ## 3.0 Jupyter notebook
