@@ -23,10 +23,10 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 #### 2.2.1 EVE-NG Linux 登录信息:
 # 这台Linux只是作为一个跳板机器使用。并<font color=red>不是</font>做实验用的Linux 设备
 
-IP | port| protocol| username| password
----|----|----|---|---|-----
-10.74.82.244|22|SSH|||
-10.74.82.253|22|SSH|||
+IP | port| protocol
+---|----|----
+10.74.82.244|22|SSH
+10.74.82.253|22|SSH
 
 ssh private key:
 
@@ -134,8 +134,9 @@ https://wwwin-github.cisco.com/ChinaSE/netdevops-training/
 所有Linux服务器默认都已经启动了 Jupyter notebook server
 
 ### 3.2 连接到Jupyter notebook server
+
 Linux Server Name | Protocol |Port | password
-------------------|----------|-----|-----|---------
+------------------|----------|-----|-----
 MGT_Linux24       | HTTP      |8824 |  lab123
 MGT_Linux25       | HTTP      |8825 |  lab123
 MGT_Linux26       | HTTP      |8826 |  lab123
