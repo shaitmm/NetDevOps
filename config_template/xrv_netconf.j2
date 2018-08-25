@@ -1,0 +1,11 @@
+ssh server netconf
+netconf agent tty
+netconf-yang agent ssh
+{# commit #}
+{% if commit %}
+commit
+
+{#end#}
+end
+{% else %}
+{% endif %}
