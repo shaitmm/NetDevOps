@@ -35,7 +35,8 @@ MGT_Linux28    | 33308| root    | eve@123| console
 MGT_Linux29    | 33309| root    | eve@123| console
 MGT_Linux30    | 33310| root    | eve@123| console
 MGT_Linux31    | 33311| root    | eve@123| console
-
+MGT_Linux32    | 33312| root    | eve@123| console
+MGT_Linux33    | 33313| root    | eve@123| console
 
 ### 1.2 MGT_IP信息
 hostname      | interface name | IP           | type
