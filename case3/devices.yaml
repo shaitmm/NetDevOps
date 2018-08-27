@@ -1,0 +1,32 @@
+devices:
+  - name: xrv1
+    host: 172.20.3.101
+  - name: xrv2
+    host: 172.20.3.102
+  - name: xrv3
+    host: 172.20.3.103
+  - name: xrv4
+    host: 172.20.3.104
+  - name: xrv5
+    host: 172.20.3.105
+  - name: xrv6
+    host: 172.20.3.106
+  - name: xrv7
+    host: 172.20.3.107
+  - name: xrv8
+    host: 172.20.3.108
+  - name: xrv9
+    host: 172.20.3.109
+  - name: xrv10
+    host: 172.20.3.110
+  - name: xrv11
+    host: 172.20.3.111
+  - name: xrv12
+    host: 172.20.3.112
+  - name: xrv13
+    host: 172.20.3.113
+  - name: xrv14
+    host: 172.20.3.114
+  - name: xrv15
+    host: 172.20.3.115
+
