@@ -1,0 +1,33 @@
+router bgp {{ as_number }}
+ address-family ipv4 unicast
+ !
+ address-family vpnv4
+ !
+ address-family ipv4 sr-policy
+
+{% for neighbor in neighbors %}
+ neighbor {{neighbor.peer_ipaddress}}
+  remote-as {{ neighbor.remote_as }}
+  update-source Loopback0
+  address-family ipv4 unicast
+  {%if neighbor.rr %}
+    route-reflector-client
+  {%endif%}
+  address-family vpnv4
+  {%if neighbor.rr  %}
+    route-reflector-client
+  {%endif%}
+  address-family ipv4 sr-policy
+  {%if neighbor.rr  %}
+    route-reflector-client
+  {%endif%}
+
+{%endfor%}
+{# commit #}
+{% if commit %}
+commit
+
+{#end#}
+end
+{% else %}
+{% endif %}
